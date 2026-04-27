@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "alpaca": {
+      "command": "sh",
+      "args": [
+        "-c",
+        "set -a; [ -f .env ] && . .env; set +a; exec uvx alpaca-mcp-server"
+      ],
+      "env": {
+        "ALPACA_PAPER_TRADE": "true"
+      }
+    }
+  }
+}
